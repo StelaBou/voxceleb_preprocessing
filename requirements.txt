@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+opencv-python
+scikit-image
+tqdm
+matplotlib 
+scipy>=0.17.0
+numba
