@@ -13,7 +13,7 @@ from skimage import img_as_ubyte
 from skimage.transform import resize
 warnings.filterwarnings("ignore")
 import cv2
-import youtube_dl
+import yt_dlp
 import subprocess
 
 from libs.utilities import make_path
@@ -75,7 +75,7 @@ def download_video(video_id, video_path, id_path, fail_video_ids = None):
 	}
 	success = True
 	try:
-		with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+		with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 			ydl.download(['https://www.youtube.com/watch?v=' + video_id])	
 	except KeyboardInterrupt:
 		print ('Stopped')

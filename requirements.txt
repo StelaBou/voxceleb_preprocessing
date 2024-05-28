@@ -7,3 +7,4 @@ tqdm
 matplotlib 
 scipy>=0.17.0
 numba
+yt-dlp
