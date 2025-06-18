@@ -13,7 +13,7 @@ from skimage import img_as_ubyte
 from skimage.transform import resize
 warnings.filterwarnings("ignore")
 import cv2
-import youtube_dl
+import yt_dlp as youtube_dl	# Changed import
 import subprocess
 
 from libs.utilities import make_path
